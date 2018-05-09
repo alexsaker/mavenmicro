@@ -1,0 +1,14 @@
+version: '3'
+services:
+  server1:
+    container_name: ping
+    build: './ping'
+    ports:
+      - "3001:8080"
+
+  server2:
+    container_name: pong
+    build: './pong'
+    ports:
+      - "3002:8080"
+
